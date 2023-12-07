@@ -37,7 +37,7 @@ if not Config.ALIVE_NAME:
         LOGS.error(f"- {e}")
 
 try: #Code by T.me/E_7_V
-    LOGS.info("⌭ بـدء تنزيـل ريبـــثون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل الزعيم ⌭")
     zq_lo.loop.run_until_complete(setup_bot())
     LOGS.info("⌭ بـدء تشغيل البـوت ⌭")
 except Exception as e:
@@ -56,12 +56,12 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print("➖➖➖➖➖ 𝐑𝐞𝐩𝐭𝐡𝐨𝐧™ ➖➖➖➖➖")
+    print("➖➖➖➖➖ سورس الزعيم™ ➖➖➖➖➖")
     print("تـم التنصـيب .. بنجـاح ✓")
     print(
-        f"⌔┊تـم تنصيـب ريبثون يـوزربـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي ..  روجر\n⌔┊قنـاة السـورس ↶.\n🌐┊@Repthon"
+        f"⌔┊تـم تنصيـب سورس الزعيم يـوزربـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي ..  الزعيم \n⌔┊قنـاة السـورس ↶.\n🌐┊@rr_r_v"
     )
-    print("➖➖➖➖➖ 𝐑𝐞𝐩𝐭𝐡𝐨𝐧™ ➖➖➖➖➖")
+    print("➖➖➖➖➖ سورس الزعيم ™ ➖➖➖➖➖")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
