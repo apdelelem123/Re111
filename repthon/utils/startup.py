@@ -113,9 +113,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZQ_LOBLOGO = await zq_lo.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://graph.org/file/f367d5a4a6bf1fbfc99b9.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس ريبـــثون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙍𝙀𝙋𝙏𝙃𝙊𝙉", "https://t.me/Repthon"),)],
+                "https://graph.org/file/341cccfc72b4704dac920.jpg",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس الزعيم الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("الزعيم", "https://t.me/rr_r_v"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -163,7 +163,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "ريبـــثون")
+            await bot.send_message("@BotFather", "الزعيم")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -181,13 +181,13 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت ريبـــثون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت الزعيم المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {ba_roger} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @Repthon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {ba_roger} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @rr_r_v 🌐")
         except Exception as e:
             print(e)
 
@@ -286,47 +286,47 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await zq_lo(JoinChannelRequest("@Repthon"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@roger21v"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthonn"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthon_up"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthon_vars"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthon_cklaish"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@ZQ_LO"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass 
     try:
-        await zq_lo(JoinChannelRequest("@Test_Repthon"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthon_help"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@Repthon_support"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
     try:
-        await zq_lo(JoinChannelRequest("@xxfir"))
+        await zq_lo(JoinChannelRequest("@rr_r_v"))
     except BaseException:
         pass
 
@@ -367,7 +367,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zq_lo.upload_file(file="baqir/taiba/Repthon1.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل ريبـــثون", zq_lo, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل الزعيم", zq_lo, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
