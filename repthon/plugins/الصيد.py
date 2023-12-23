@@ -127,7 +127,7 @@ async def _(event):
 الامر:  `.حالة التثبيت`
 • لمعرفة عدد المحاولات للصيد
 
-**@Repthon - channle userbot**
+**@T_5_G - channle userbot**
 
 """
     )
@@ -141,7 +141,7 @@ async def hunterusername(event):
         ch = await zq_lo(
             functions.channels.CreateChannelRequest(
                 title="REPTHON HUNTER - صيد ريبثون",
-                about="This channel to hunt username by - @Repthon",
+                about="This channel to hunt username by - @T_5_G",
             )
         )
         ch = ch.updates[1].channel_id
