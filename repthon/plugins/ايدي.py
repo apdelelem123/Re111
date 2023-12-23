@@ -16,7 +16,7 @@ from ..helpers import get_user_from_event, reply_id
 from . import spamwatch
 
 REP_EM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "•❃"
-ID_EDIT = gvarstatus("ID_ET") or "ايدي"
+ID_EDIT = gvarstatus("ID_ET") or "ا"
 
 plugin_category = "utils"
 LOGS = logging.getLogger(__name__)
@@ -157,7 +157,7 @@ async def _(event):
     await edit_or_reply(catevent, caption)
 
 
-@zq_lo.rep_cmd(pattern="ايدي(?: |$)(.*)",
+@zq_lo.rep_cmd(pattern="ا(?: |$)(.*)",
     command=("ايدي", plugin_category),
     info={
         "header": "لـ عـرض معلومـات الشخـص",
